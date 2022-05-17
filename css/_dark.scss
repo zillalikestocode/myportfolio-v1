@@ -1,0 +1,66 @@
+
+body.dark{
+    background: #000000;
+    .nav{
+        .navlinks{
+            .navlink{
+                color: #fff;
+                &:hover{
+                    color: #8f00ff
+                }
+            }
+        }
+        .darkbtn{
+                color: #fff;
+        }
+        .menubtn{
+            color: #fff;
+        }
+    }
+    .nav.fixed{
+        background: #1c1c1c;
+        border: none;
+    }
+    section{
+        color: #fff;
+        .hire{
+        box-shadow: none;
+        &:hover{
+            box-shadow: none;
+        }
+        }
+        #services{
+            .servicecont{
+                color: #000000;
+            }
+        }
+        #about{
+            .about_cont{
+                background: #1c1c1c;
+                .carat{
+                   background: #1c1c1c; 
+                }
+            }
+        }
+        #contact{
+            .contactcont{
+                background: #1c1c1c;
+            }
+            .contactform{
+                form{
+                    input{
+                        box-shadow: darken(#8f00ff, 32%) 0 13px 20px 0 ;
+                    }
+                    textarea{
+                        box-shadow: darken(#8f00ff, 32%) 0 13px 20px 0 ;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        background: #1c1c1c;
+        border: none;
+        color: white;
+    }
+}

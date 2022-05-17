@@ -1,0 +1,535 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body.dark {
+  background: #000000;
+}
+body.dark .nav .navlinks .navlink {
+  color: #fff;
+}
+body.dark .nav .navlinks .navlink:hover {
+  color: #8f00ff;
+}
+body.dark .nav .darkbtn {
+  color: #fff;
+}
+body.dark .nav .menubtn {
+  color: #fff;
+}
+body.dark .nav.fixed {
+  background: #1c1c1c;
+  border: none;
+}
+body.dark section {
+  color: #fff;
+}
+body.dark section .hire {
+  box-shadow: none;
+}
+body.dark section .hire:hover {
+  box-shadow: none;
+}
+body.dark section #services .servicecont {
+  color: #000000;
+}
+body.dark section #about .about_cont {
+  background: #1c1c1c;
+}
+body.dark section #about .about_cont .carat {
+  background: #1c1c1c;
+}
+body.dark section #contact .contactcont {
+  background: #1c1c1c;
+}
+body.dark section #contact .contactform form input {
+  box-shadow: #33005c 0 13px 20px 0;
+}
+body.dark section #contact .contactform form textarea {
+  box-shadow: #33005c 0 13px 20px 0;
+}
+body.dark footer {
+  background: #1c1c1c;
+  border: none;
+  color: white;
+}
+
+* {
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background: whitesmoke;
+}
+
+.nav.fixed {
+  position: fixed;
+  background: #fff;
+  border-bottom: 0.5px rgb(218, 215, 215) solid;
+  -webkit-animation: slide 0.3s;
+          animation: slide 0.3s;
+}
+@-webkit-keyframes slide {
+  from {
+    height: 0;
+  }
+  to {
+    height: 45px;
+  }
+}
+@keyframes slide {
+  from {
+    height: 0;
+  }
+  to {
+    height: 45px;
+  }
+}
+
+.nav {
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  left: 0;
+  top: 0;
+  color: white;
+  align-items: center;
+}
+.nav i {
+  padding: 5px;
+}
+.nav .logo_details {
+  position: relative;
+  padding-left: 70px;
+  color: white;
+}
+.nav .logo_details .title {
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #8f00ff;
+}
+.nav .navlinks {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 10px;
+}
+.nav .navlinks .navlink {
+  padding: 10px;
+  text-decoration: none;
+  color: #1b1b1b;
+  font-size: 15px;
+  font-weight: 600;
+}
+.nav .navlinks .navlink:hover {
+  color: #8f00ff;
+}
+.nav .navlinks .navlink.enter {
+  border-bottom: 2px solid #8f00ff;
+}
+.nav .darkbtn {
+  color: #1b1b1b;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.nav .menubtn {
+  color: #1b1b1b;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+section {
+  padding: 60px;
+}
+section #home {
+  padding-top: 60px;
+  padding-bottom: 150px;
+}
+section #home h1 {
+  font-size: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+  overflow: hidden;
+}
+section #home .name {
+  color: #8f00ff;
+  display: inline-block;
+  -webkit-animation: typing 2s steps(30, end) infinite forwards;
+          animation: typing 2s steps(30, end) infinite forwards;
+  overflow: hidden;
+  width: 0;
+  white-space: nowrap;
+}
+section #home h6 {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-family: Open Sans;
+}
+section #home .socials {
+  display: flex;
+}
+section #home .socials .social {
+  font-size: 22px;
+  padding: 3px;
+  text-decoration: none;
+  color: #8f00ff;
+}
+section #home .hire {
+  background: linear-gradient(to right, #8f00ff 0%, #c300ff 100%, #c300ff 100%);
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  padding: 10px;
+  font-size: 13px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: white;
+  box-shadow: rgb(187, 184, 184) 0 1px 15px 0;
+  transition: 0.2s ease;
+}
+section #home .hire:hover {
+  font-size: 15px;
+  border-radius: 21px;
+  transition: 0.2s ease;
+  box-shadow: rgb(187, 184, 184) 0 7px 20px 0;
+}
+section #about {
+  margin-right: auto;
+  padding-top: 50px;
+}
+section #about .about_cont {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  height: auto;
+}
+section #about .about_cont .image_cover {
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 250px;
+  background: #8f00ff;
+}
+section #about .about_cont .write-up {
+  padding: 10px;
+  padding-left: 30px;
+  width: 400px;
+}
+section #about .about_cont .write-up .progress_cont {
+  display: flex;
+  width: 350px;
+  text-align: center;
+  align-items: center;
+  height: auto;
+}
+section #about .about_cont .write-up .progress_cont img {
+  width: 35px;
+  padding: 5px;
+  padding-left: 0;
+}
+section #about .about_cont .write-up .progress_cont .progress_bar {
+  width: 70%;
+  height: 10px;
+  background: rgb(172, 169, 169);
+  margin: auto;
+  margin-left: 0;
+  border-radius: 40px;
+}
+section #about .about_cont .write-up .progress_cont .progress_bar .progress {
+  height: 100%;
+  background: linear-gradient(to right, #8f00ff 0%, #d400ff 100%, #d400ff 100%);
+  border-radius: 40px;
+}
+section #about .about_cont .write-up .progress_cont .progress_bar .progress.html {
+  width: 95%;
+}
+section #about .about_cont .write-up .progress_cont .progress_bar .progress.css {
+  width: 80%;
+}
+section #about .about_cont .write-up .progress_cont .progress_bar .progress.js {
+  width: 50%;
+}
+section #about .about_cont .write-up .progress_cont .progress_bar .progress.bs {
+  width: 70%;
+}
+section #about .about_cont .write-up .progress_cont span {
+  padding: 5px;
+}
+section #about .about_cont .carat {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: white;
+  transform: rotate(45deg);
+  left: 310px;
+  margin-top: 30px;
+}
+section #services {
+  padding-top: 50px;
+  align-items: center;
+  text-align: center;
+}
+section #services .servicecont {
+  display: flex;
+  color: #fff;
+}
+section #services .servicecont .service {
+  width: 100%;
+  background: #8f00ff;
+  margin: 5px;
+  border-radius: 10px;
+  align-items: center;
+}
+section #services .servicecont .service img {
+  width: 100px;
+  padding-top: 30px;
+}
+section #services .servicecont .service p {
+  padding: 20px;
+  padding-top: 7px;
+}
+section #contact {
+  text-align: center;
+  padding-top: 50px;
+}
+section #contact .contactcont {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  height: auto;
+}
+section #contact .contactcont .contactinfo {
+  border-radius: 10px;
+  height: 100%;
+  text-align: left;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  color: whitesmoke;
+  background: url("../images/contactbg.jpg") no-repeat;
+  background-size: cover;
+}
+section #contact .contactcont .contactinfo .contact_addr i {
+  line-height: 50px;
+  min-width: 30px;
+}
+section #contact .contactcont .contactinfo .contact_addr span {
+  font-size: 15px;
+}
+section #contact .contactcont .contactinfo .contact_socials {
+  margin-top: 210px;
+  display: flex;
+}
+section #contact .contactcont .contactinfo .contact_socials .contact_social {
+  min-width: 40px;
+}
+section #contact .contactcont .contactinfo .contact_socials .contact_social a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+section #contact .contactcont .contactform {
+  width: 70%;
+  margin: auto;
+  align-items: center;
+}
+section #contact .contactcont .contactform form input {
+  border-radius: 55px;
+  outline: none;
+  border: none;
+  padding: 7px;
+  padding-left: 20px;
+  margin: 10px;
+  width: 60%;
+  box-shadow: #d7a3ff 0 10px 20px 0;
+}
+section #contact .contactcont .contactform form textarea {
+  width: 60%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 7px;
+  padding-left: 20px;
+  box-shadow: #d7a3ff 0 10px 30px 0;
+  margin: 10px;
+}
+section #contact .contactcont .contactform form button {
+  padding: 5px;
+  outline: 5px;
+  border: none;
+  border-radius: 20px;
+  width: 70px;
+  background: linear-gradient(to right, #b50fdf 0%, #8f00ff 80%, #8f00ff 100%);
+  color: white;
+  cursor: pointer;
+}
+section #contact .contactcont .contactform form button:hover {
+  filter: brightness(0.95);
+}
+
+footer {
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  border-top: 0.5px rgb(218, 215, 215) solid;
+  left: 0;
+  right: 0;
+  position: absolute;
+  font-family: Open Sans;
+  height: 45px;
+}
+footer p {
+  font-family: Open Sans;
+}
+footer p i {
+  text-align: center;
+  min-width: 30px;
+  transform: translateY(5%);
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 500px;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 720px) {
+  body .nav .logo_details {
+    padding-left: 10vw;
+  }
+  body .nav .navlinks {
+    flex-direction: column;
+    position: absolute;
+    border: 0.5px solid rgb(218, 215, 215);
+    height: auto;
+    margin-top: 250px;
+    left: 20px;
+    right: 20px;
+    background: #fff;
+    padding: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+  }
+  body .nav .navlinks.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  body .nav .navlinks .navlink {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  body .nav .navlinks .navlink.enter {
+    border: none;
+    background: #8f00ff;
+    color: #fff;
+  }
+  body .nav .navlinks .navlink:hover {
+    color: none;
+  }
+  body .nav .darkbtn {
+    margin-left: auto;
+  }
+  body .nav .menubtn {
+    display: block;
+  }
+  body .nav .menubtn .openmenu.hide {
+    display: none;
+  }
+  body .nav .menubtn .closemenu.hide {
+    display: none;
+  }
+  body section {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+  body section #home h1 {
+    font-size: 5.5vw;
+  }
+  body section #home h6 {
+    font-size: 3.5vw;
+  }
+  body section #home .name {
+    display: block;
+  }
+  @-webkit-keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 350px;
+    }
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 350px;
+    }
+  }
+  body section #about .about_cont {
+    display: block;
+    height: auto;
+    width: auto;
+  }
+  body section #about .about_cont .write-up {
+    padding: auto;
+    width: 90%;
+  }
+  body section #about .about_cont .write-up .progress_cont {
+    width: 100%;
+  }
+  body section #about .about_cont .carat {
+    display: none;
+  }
+  body section #services .servicecont {
+    display: block;
+  }
+  body section #contact .contactcont {
+    display: block;
+  }
+  body section #contact .contactcont .contactinfo {
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  body section #contact .contactcont .contactform {
+    width: 100%;
+  }
+  body section #contact .contactcont .contactform input {
+    padding-right: 0;
+  }
+  body section #contact .contactcont .contactform button {
+    margin-bottom: 20px;
+  }
+  body.dark .nav .navlinks {
+    background: #1c1c1c;
+    border: none;
+  }
+  body.dark .nav .navlinks .navlink:hover {
+    color: inherit;
+  }
+}
+@media screen and (max-width: 850px) {
+  body section #home .name {
+    display: block;
+  }
+}/*# sourceMappingURL=main.css.map */

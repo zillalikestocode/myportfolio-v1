@@ -1,0 +1,138 @@
+$mobile: 720px;
+$ipad: 850px;
+
+body {
+    @media screen and (max-width: $mobile){
+        .nav{
+            .logo_details{
+                padding-left: 10vw;
+            }
+            .navlinks{
+                flex-direction: column;
+                position: absolute;
+                border: 0.5px solid rgb(218, 215, 215);
+                height: auto;
+                margin-top: 250px;
+                left: 20px;
+                right: 20px;
+                background: #fff;
+                padding: 10px; 
+                opacity: 0;
+                pointer-events: none; 
+                transition: 0.3s ease-in-out;
+                &.open{
+                    opacity: 1;
+                    pointer-events: auto;
+                }             
+                .navlink{
+                    position: relative;
+                    width: 100%;
+                    text-align: center;
+                    &.enter{
+                        border: none;
+                        background: #8f00ff;
+                        color: #fff;
+                    }
+                    &:hover{
+                        color: none;
+                    }
+                }
+            }
+            .darkbtn{
+                margin-left: auto;
+            }
+            .menubtn{
+                display: block;
+                .openmenu.hide{
+                    display: none;
+                }
+                .closemenu.hide{
+                    display: none;
+                }
+            }
+        }
+        section{
+            padding-left: 7vw;
+            padding-right: 7vw;
+            #home{
+                h1{
+                    font-size: 5.5vw;
+                }
+                h6{
+                    font-size: 3.5vw;
+                }
+                .name{
+                    display: block;
+                    @keyframes typing{
+                        from {width: 0}
+                        to {width: 350px;}
+                    }
+                }
+            }
+            #about{
+                .about_cont{
+                    display: block;
+                    height: auto;
+                    width: auto;
+                    .write-up{
+                        padding: auto;
+                        width: 90%;
+                        .progress_cont{
+                            width: 100%;
+                        }
+                    }
+                    .carat{
+                        display: none;
+                    }
+                }
+                
+            }
+            #services{
+                .servicecont{
+                    display: block
+                }
+            }
+            #contact{
+                .contactcont{
+                    display: block;
+                    .contactinfo{
+                        border-radius: 10px;
+                        border-bottom-right-radius: 0;
+                        border-bottom-left-radius: 0;
+                    }
+                    .contactform{
+                        width: 100%;
+                        input{
+                            padding-right: 0;
+                        }
+                        button{
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        &.dark{
+            .nav{
+                .navlinks{
+                    background: #1c1c1c;
+                    border: none;
+                    .navlink{
+                        &:hover{
+                            color: inherit;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+    @media screen and (max-width:  $ipad){
+        section{
+            #home{
+                .name{
+                    display: block;
+                }
+            }
+        }
+    }
+}
